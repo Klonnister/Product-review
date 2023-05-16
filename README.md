@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![1440 pixels capture](src/screeshots/1440px.png)
-![375 pixels capture](src/screeshots/375px.png)
+![1440 pixels capture](src/screenshots/1440px.png)
+![375 pixels capture](src/screenshots/375px.png)
 
 ### Links
 
@@ -54,7 +54,7 @@ In this exercise I learned to use the picture and source HTML tags which are use
 </picture>
 ```
 
-I also learned to use the <ins> and <del> tags, which are used to specify content that is no longer accurate and content that has been inserted.
+I also learned to use the ins and del tags, which are used to specify content that is no longer accurate and content that has been inserted.
 
 ```html
 <ins>$149.99</ins>
