@@ -104,18 +104,18 @@ body {
     border-radius: 8px;
 }
 
+.details-section > button > img {
+    margin-right: 0.50rem;
+    width: 1.05rem;
+    vertical-align: top;
+}
+
 .details-section > button:hover {
     background-color: hsla(158, 36%, 37%, 92%);
 }
 
 .details-section > button:active {
     background-color: hsl(158, 48%, 17%);
-}
-
-.details-section > button > img {
-    margin-right: 0.50rem;
-    width: 1.05rem;
-    vertical-align: top;
 }
 
 /*-------------------------Footer------------------------*/
