@@ -104,8 +104,16 @@ body {
     border-radius: 8px;
 }
 
+.details-section > button:hover {
+    background-color: hsla(158, 36%, 37%, 92%);
+}
+
+.details-section > button:active {
+    background-color: hsl(158, 48%, 17%);
+}
+
 .details-section > button > img {
-    margin-right: 0.75rem;
+    margin-right: 0.50rem;
     width: 1.05rem;
     vertical-align: top;
 }
@@ -145,6 +153,10 @@ footer {
     /*Details section*/
     .details-section {
         padding: 1.6rem;
+    }
+
+    .details-section > h1 {
+        margin-bottom: 1rem;   
     }
 
     .details-section > .price {
