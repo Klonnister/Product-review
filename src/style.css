@@ -1,0 +1,173 @@
+/*---------------------General style-----------------------*/
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*I used the mobile-first workflow, so all this code is for x-small sizes
+and at the bottom you'll find the media queary I used to make it responsive
+for larger screens*/
+
+body {  
+    padding: 2rem 1rem;
+    background-color: var(--cream);
+}
+
+/*----------------------Card style-----------------------*/
+.card {
+    width: 100%;
+    border-radius: 12px;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+/*----------------Image section----------------*/
+
+.img-section > picture > img {
+    width: 100%;
+}
+
+/*----------------Details section----------------*/
+
+/*Main text*/
+.details-section {
+    padding: 1.4rem;
+}
+
+.details-section > h1 {
+    color: var(--dark-grayish-blue);    
+    font-size: 0.80rem;
+    font-weight: 200;
+    letter-spacing: 5px;
+    margin-bottom: 0.75rem;
+}
+
+.details-section > h2 {
+    color: var(--dark-blue);
+    font-family: 'Fraunces', serif;;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.details-section > .description {
+    color: var(--dark-grayish-blue);    
+    font-size: 0.89rem;
+    font-weight: 200;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/*Prices*/
+
+.details-section > .price {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.details-section > .price > .ins {
+    color: var(--dark-cyan);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    text-decoration: none;
+}
+
+.details-section > .price > .del {
+    color: var(--dark-grayish-blue);
+}
+
+/*Button*/
+
+.details-section > button {
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    font-size: 1.05rem;
+    font-weight: 700;
+    vertical-align: middle;
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-radius: 8px;
+}
+
+.details-section > button > img {
+    margin-right: 0.75rem;
+    width: 1.05rem;
+    vertical-align: top;
+}
+
+/*-------------------------Footer------------------------*/
+footer {
+    margin-top: 0.40rem;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/*-----------------------Media Query-------------------------*/
+
+@media only screen and (min-width: 36em) {
+    /*General style*/
+    body {  
+        padding: 0;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Card style*/
+    .card {
+        max-width: 35rem;
+        display: flex;
+    }
+
+    section {
+        max-width: 50%;
+        max-height: 26rem;
+    }
+    
+    /*Details section*/
+    .details-section {
+        padding: 1.6rem;
+    }
+
+    .details-section > .price {
+        margin-bottom: 1.5rem;
+    }
+
+    .details-section > button {
+        font-size: .85rem;
+        font-weight: 700;
+    }
+
+    .details-section > button > img {
+        width: .85rem;
+    }
+
+    /*Footer*/
+    footer {
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+
+        @media screen and (max-height: 29rem) {
+            display: none;
+        }
+    }
+}
